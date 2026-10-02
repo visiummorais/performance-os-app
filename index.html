@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <!-- Privacy guarantee: the app can only talk to its own origin. No third-party requests are possible. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; connect-src 'self' blob: data:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <!-- Privacy guarantee: the app only talks to its own origin and, if the user enables sync, to the GitHub API (end-to-end encrypted vault). -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; connect-src 'self' blob: data: https://api.github.com; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
     <meta name="referrer" content="no-referrer" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -15,7 +15,7 @@
     <link rel="icon" href="/performance-os-app/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/performance-os-app/apple-touch-icon.png" />
     <title>Performance OS</title>
-    <script type="module" crossorigin src="/performance-os-app/assets/index-HGoOMMTT.js"></script>
+    <script type="module" crossorigin src="/performance-os-app/assets/index-CuKCQUH_.js"></script>
     <link rel="stylesheet" crossorigin href="/performance-os-app/assets/index-DIPq5qJZ.css">
   <link rel="manifest" href="/performance-os-app/manifest.webmanifest"></head>
   <body>
